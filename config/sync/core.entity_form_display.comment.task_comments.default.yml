@@ -1,0 +1,42 @@
+uuid: 269bb9ee-ba57-4c9b-b296-95480244e517
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.task_comments
+    - field.field.comment.task_comments.field_comme
+    - field.field.comment.task_comments.field_p
+    - field.field.comment.task_comments.field_task_status
+  module:
+    - link
+    - text
+id: comment.task_comments.default
+targetEntityType: comment
+bundle: task_comments
+mode: default
+content:
+  author:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_comme:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_p:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_task_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+hidden:
+  subject: true

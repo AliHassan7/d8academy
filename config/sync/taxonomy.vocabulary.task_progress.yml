@@ -1,0 +1,9 @@
+uuid: c681bfd1-e9fe-4034-8002-d6ac5fe91336
+langcode: en
+status: true
+dependencies: {  }
+name: 'Task Progress'
+vid: task_progress
+description: 'A list of terms to describe the status of a website task'
+hierarchy: 0
+weight: 0

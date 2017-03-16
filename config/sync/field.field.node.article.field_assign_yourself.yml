@@ -1,0 +1,23 @@
+uuid: 66af03d6-7db0-45fe-8395-1bdc004b7934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assign_yourself
+    - node.type.article
+id: node.article.field_assign_yourself
+field_name: field_assign_yourself
+entity_type: node
+bundle: article
+label: 'Assign Yourself'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

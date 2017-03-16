@@ -1,0 +1,22 @@
+uuid: 20a782a1-cb20-4810-b341-66e001a3fa6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.task
+  module:
+    - text
+id: node.task.field_description
+field_name: field_description
+entity_type: node
+bundle: task
+label: Description
+description: 'Provide a thorough description of the task.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

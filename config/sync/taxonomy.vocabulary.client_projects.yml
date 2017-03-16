@@ -1,0 +1,9 @@
+uuid: bf35c0c7-6b7e-4cae-b525-4248b1229d95
+langcode: en
+status: true
+dependencies: {  }
+name: 'Client Projects'
+vid: client_projects
+description: 'A list of client projects'
+hierarchy: 0
+weight: 0
