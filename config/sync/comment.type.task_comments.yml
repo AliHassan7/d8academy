@@ -1,0 +1,8 @@
+uuid: ca9c0542-68b5-4a47-89e5-def8a8aba8b7
+langcode: en
+status: true
+dependencies: {  }
+id: task_comments
+label: 'Task Comments'
+target_entity_type_id: node
+description: 'A place for users to comment on website tasks.'

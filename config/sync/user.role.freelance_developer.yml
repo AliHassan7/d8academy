@@ -1,0 +1,10 @@
+uuid: 2cd4b127-8088-4e38-888f-c4304a195d9d
+langcode: en
+status: true
+dependencies: {  }
+id: freelance_developer
+label: 'Freelance Developer'
+weight: 3
+is_admin: null
+permissions:
+  - 'edit any task content'

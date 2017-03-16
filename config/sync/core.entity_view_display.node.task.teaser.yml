@@ -1,0 +1,19 @@
+uuid: fd10f3ca-8231-4e97-b0bf-76ece11bb1ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.task.field_description
+    - node.type.task
+  module:
+    - user
+id: node.task.teaser
+targetEntityType: node
+bundle: task
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_description: true

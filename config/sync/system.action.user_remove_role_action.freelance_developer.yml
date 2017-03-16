@@ -1,0 +1,14 @@
+uuid: 0cedaab2-e5ac-4610-bc40-1c2cd4575d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.freelance_developer
+  module:
+    - user
+id: user_remove_role_action.freelance_developer
+label: 'Remove the Freelance Developer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: freelance_developer

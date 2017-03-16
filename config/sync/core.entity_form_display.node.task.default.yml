@@ -1,0 +1,102 @@
+uuid: ccfed5c8-fcf5-48ef-bd9c-28217f311ff5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.task.field_as
+    - field.field.node.task.field_client_project
+    - field.field.node.task.field_description
+    - field.field.node.task.field_image
+    - field.field.node.task.field_task_status
+    - field.field.node.task.field_user_comments
+    - image.style.thumbnail
+    - node.type.task
+  module:
+    - comment
+    - image
+    - path
+    - text
+id: node.task.default
+targetEntityType: node
+bundle: task
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_as:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_client_project:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_description:
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_image:
+    weight: 9
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_task_status:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_user_comments:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

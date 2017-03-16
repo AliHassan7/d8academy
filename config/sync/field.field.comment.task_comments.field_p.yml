@@ -1,0 +1,23 @@
+uuid: 49e4d7af-8add-4cba-9922-e874c9e010af
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.task_comments
+    - field.storage.comment.field_p
+  module:
+    - link
+id: comment.task_comments.field_p
+field_name: field_p
+entity_type: comment
+bundle: task_comments
+label: 'Pull Request'
+description: 'Provide a link to your pull request here. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
