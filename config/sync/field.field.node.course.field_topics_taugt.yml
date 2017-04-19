@@ -1,0 +1,28 @@
+uuid: 25c0c7f7-b67d-433f-800b-5bac40195e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics_taugt
+    - node.type.course
+    - taxonomy.vocabulary.topic
+id: node.course.field_topics_taugt
+field_name: field_topics_taugt
+entity_type: node
+bundle: course
+label: 'Topics Taught'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

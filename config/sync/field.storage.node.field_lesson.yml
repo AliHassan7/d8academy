@@ -1,0 +1,19 @@
+uuid: 6b74cfe8-e956-4f05-85de-fb31f0617e12
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_lesson
+field_name: field_lesson
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

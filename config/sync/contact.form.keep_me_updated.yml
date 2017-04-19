@@ -1,0 +1,20 @@
+uuid: 3925b464-4586-40fd-981f-9ca108a07a5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: Submit
+    show_preview: false
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+id: keep_me_updated
+label: 'Keep me updated'
+recipients:
+  - ali.hassan@debugacademy.com
+reply: ''
+weight: 0
+message: 'Thank you for your submission. We will be in contact with you shortly.'
+redirect: ''

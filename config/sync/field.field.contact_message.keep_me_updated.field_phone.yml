@@ -1,0 +1,23 @@
+uuid: 239e6f1a-a9e9-410b-949c-f67d6bc71812
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.keep_me_updated
+    - field.storage.contact_message.field_phone
+id: contact_message.keep_me_updated.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: keep_me_updated
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

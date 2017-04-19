@@ -1,0 +1,19 @@
+uuid: d53af208-6a32-4a39-a20a-48f139c8ba85
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - range
+id: node.field_expected_class_size
+field_name: field_expected_class_size
+entity_type: node
+type: range_integer
+settings: {  }
+module: range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

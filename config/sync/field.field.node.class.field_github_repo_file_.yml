@@ -1,0 +1,27 @@
+uuid: f1707eef-1f96-495e-9edf-0663ff79f500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_github_repo_file_
+    - node.type.class
+  module:
+    - file
+id: node.class.field_github_repo_file_
+field_name: field_github_repo_file_
+entity_type: node
+bundle: class
+label: 'Github Repo File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: zip
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,34 @@
+uuid: 06f2b46f-f187-45ee-9f52-a86a96e8b735
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learning_assistant
+    - node.type.semester
+id: node.semester.field_learning_assistant
+field_name: field_learning_assistant
+entity_type: node
+bundle: semester
+label: 'Learning Assistant'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        l: l
+        administrator: '0'
+        freelance_developer: '0'
+        teacher: '0'
+        student: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

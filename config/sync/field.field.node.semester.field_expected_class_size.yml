@@ -1,0 +1,29 @@
+uuid: 48442a0f-4b01-4550-8254-cf15b8f75e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expected_class_size
+    - node.type.semester
+  module:
+    - range
+id: node.semester.field_expected_class_size
+field_name: field_expected_class_size
+entity_type: node
+bundle: semester
+label: 'Expected class size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: students
+field_type: range_integer

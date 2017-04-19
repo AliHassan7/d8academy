@@ -1,0 +1,23 @@
+uuid: 258bfae7-fd7e-4081-8124-75ea03d1e160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_class_frequency
+    - node.type.course
+id: node.course.field_class_frequency
+field_name: field_class_frequency
+entity_type: node
+bundle: course
+label: 'Class Frequency'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: 'days per week'
+field_type: integer

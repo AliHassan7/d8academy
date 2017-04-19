@@ -1,0 +1,26 @@
+uuid: 743dbd4a-65c5-470a-9f0d-ff457700d9c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.semester.body
+    - node.type.semester
+  module:
+    - text
+    - user
+id: node.semester.teaser
+targetEntityType: node
+bundle: semester
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

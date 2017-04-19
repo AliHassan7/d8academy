@@ -1,0 +1,19 @@
+uuid: bfd0863c-3f85-4925-ae97-9044e46df35d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.keep_me_updated
+    - field.storage.contact_message.field_name
+id: contact_message.keep_me_updated.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: keep_me_updated
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

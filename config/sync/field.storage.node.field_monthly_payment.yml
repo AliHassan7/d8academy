@@ -1,0 +1,20 @@
+uuid: 9fd59113-e76e-434d-af15-0e455854490c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_monthly_payment
+field_name: field_monthly_payment
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

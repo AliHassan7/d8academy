@@ -1,0 +1,21 @@
+uuid: fd88b3bb-900c-4a30-aec7-7c2cb6e91d86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.semester
+  module:
+    - datetime
+id: node.semester.field_dates
+field_name: field_dates
+entity_type: node
+bundle: semester
+label: Dates
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

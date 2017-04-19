@@ -1,0 +1,23 @@
+uuid: a64e8d8f-029f-45fb-a9de-1365028be523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total_price
+    - node.type.payment_plan
+id: node.payment_plan.field_total_price
+field_name: field_total_price
+entity_type: node
+bundle: payment_plan
+label: 'Total Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

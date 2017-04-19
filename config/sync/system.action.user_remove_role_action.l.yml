@@ -1,0 +1,14 @@
+uuid: 8fa949dc-b475-4923-870a-dbf43e2a8494
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.l
+  module:
+    - user
+id: user_remove_role_action.l
+label: 'Remove the Learning Assistant role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: l

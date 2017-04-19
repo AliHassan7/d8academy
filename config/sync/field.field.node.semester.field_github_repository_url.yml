@@ -1,0 +1,23 @@
+uuid: dcf0099d-a3e4-4447-ad44-6b3339c3bf36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_github_repository_url
+    - node.type.semester
+  module:
+    - link
+id: node.semester.field_github_repository_url
+field_name: field_github_repository_url
+entity_type: node
+bundle: semester
+label: 'Github Repository URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

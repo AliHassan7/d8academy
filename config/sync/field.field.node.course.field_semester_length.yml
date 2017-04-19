@@ -1,0 +1,23 @@
+uuid: 9844afc1-40e5-4bbc-938c-75fba6da31af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_semester_length
+    - node.type.course
+id: node.course.field_semester_length
+field_name: field_semester_length
+entity_type: node
+bundle: course
+label: 'Semester Length'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: days
+field_type: integer

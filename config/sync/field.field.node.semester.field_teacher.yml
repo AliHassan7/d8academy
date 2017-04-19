@@ -1,0 +1,34 @@
+uuid: 8cac5167-e607-492e-8906-d8fa46af6098
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teacher
+    - node.type.semester
+id: node.semester.field_teacher
+field_name: field_teacher
+entity_type: node
+bundle: semester
+label: Teacher
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        teacher: teacher
+        administrator: '0'
+        freelance_developer: '0'
+        student: '0'
+        l: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

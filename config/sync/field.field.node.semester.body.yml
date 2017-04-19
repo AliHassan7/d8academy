@@ -1,0 +1,22 @@
+uuid: 52adc188-c926-4d31-b3f8-cf2d18d65d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.semester
+  module:
+    - text
+id: node.semester.body
+field_name: body
+entity_type: node
+bundle: semester
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

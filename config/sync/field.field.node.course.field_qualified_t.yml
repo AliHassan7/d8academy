@@ -1,0 +1,34 @@
+uuid: 250ef70c-6a4a-464a-9903-8f9dcbb7af1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualified_t
+    - node.type.course
+id: node.course.field_qualified_t
+field_name: field_qualified_t
+entity_type: node
+bundle: course
+label: 'Qualified Teachers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        teacher: teacher
+        administrator: '0'
+        freelance_developer: '0'
+        student: '0'
+        l: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

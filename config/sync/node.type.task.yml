@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Website Task'
+name: Task
 type: task
 description: 'Content describing work that needs to be done for a client website. '
 help: ''

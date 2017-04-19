@@ -1,0 +1,20 @@
+uuid: 1191d877-202d-42ff-b33b-f547bb4e7eca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_version_of_dru
+field_name: field_version_of_dru
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

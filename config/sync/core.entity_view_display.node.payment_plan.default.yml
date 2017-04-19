@@ -1,0 +1,92 @@
+uuid: 8bf42bf2-aeda-4c89-b764-1c70aaab5f7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.payment_plan.field__of_monthly_payments
+    - field.field.node.payment_plan.field_custom_p
+    - field.field.node.payment_plan.field_discounted_price
+    - field.field.node.payment_plan.field_down_payment
+    - field.field.node.payment_plan.field_monthly_payment
+    - field.field.node.payment_plan.field_paypal_url
+    - field.field.node.payment_plan.field_total_price
+    - node.type.payment_plan
+  module:
+    - link
+    - user
+id: node.payment_plan.default
+targetEntityType: node
+bundle: payment_plan
+mode: default
+content:
+  field__of_monthly_payments:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_custom_p:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_discounted_price:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_down_payment:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_monthly_payment:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_paypal_url:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_total_price:
+    weight: 101
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  links:
+    weight: 100
+hidden: {  }

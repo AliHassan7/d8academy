@@ -1,0 +1,28 @@
+uuid: 50ef438e-e626-4a9c-b900-fcd456fa3042
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version_of_dru
+    - node.type.project
+    - taxonomy.vocabulary.topic
+id: node.project.field_version_of_dru
+field_name: field_version_of_dru
+entity_type: node
+bundle: project
+label: 'Version of Drupal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

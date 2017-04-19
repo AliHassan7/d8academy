@@ -1,0 +1,20 @@
+uuid: 3a462ff3-8561-4171-9888-8721fb70f76a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_individual_class_length
+field_name: field_individual_class_length
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

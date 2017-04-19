@@ -1,0 +1,14 @@
+uuid: 506ab9ab-cba7-4c59-8a53-81eb06785dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.l
+  module:
+    - user
+id: user_add_role_action.l
+label: 'Add the Learning Assistant role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: l

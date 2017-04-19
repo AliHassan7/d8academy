@@ -1,0 +1,21 @@
+uuid: 8f3266ed-ba4a-4363-a6b0-f14b766657c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_online_availability
+    - node.type.semester
+  module:
+    - options
+id: node.semester.field_online_availability
+field_name: field_online_availability
+entity_type: node
+bundle: semester
+label: 'Online Availability'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

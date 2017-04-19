@@ -1,0 +1,19 @@
+uuid: 13de4803-722d-4617-824a-0a6a02c6d52f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holidays
+    - node.type.semester
+id: node.semester.field_holidays
+field_name: field_holidays
+entity_type: node
+bundle: semester
+label: Holidays
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

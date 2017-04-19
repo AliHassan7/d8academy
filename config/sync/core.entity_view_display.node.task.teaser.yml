@@ -16,4 +16,9 @@ content:
   links:
     weight: 100
 hidden:
+  field_as: true
+  field_client_project: true
   field_description: true
+  field_image: true
+  field_task_status: true
+  field_user_comments: true

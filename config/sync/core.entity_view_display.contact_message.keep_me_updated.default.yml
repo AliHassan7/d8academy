@@ -1,0 +1,40 @@
+uuid: 01fa55f6-5f48-4617-98a6-c3dac2e7b565
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.keep_me_updated
+    - field.field.contact_message.keep_me_updated.field_email
+    - field.field.contact_message.keep_me_updated.field_name
+    - field.field.contact_message.keep_me_updated.field_phone
+id: contact_message.keep_me_updated.default
+targetEntityType: contact_message
+bundle: keep_me_updated
+mode: default
+content:
+  field_email:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+hidden:
+  mail: true
+  message: true
+  name: true
+  subject: true

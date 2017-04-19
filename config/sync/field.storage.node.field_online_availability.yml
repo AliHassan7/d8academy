@@ -1,0 +1,30 @@
+uuid: 45c0b7df-7a1a-4fd1-b947-2f9f33d762de
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_online_availability
+field_name: field_online_availability
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'in-person only'
+      label: 'In-Person Only'
+    -
+      value: hybrid
+      label: Hybrid
+    -
+      value: 'online only'
+      label: Online-Only
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 173d5b80-fde7-452f-ba7c-1d09834fcca3
+langcode: en
+status: true
+dependencies: {  }
+id: l
+label: 'Learning Assistant'
+weight: 6
+is_admin: null
+permissions: {  }

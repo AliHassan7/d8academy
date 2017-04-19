@@ -1,0 +1,23 @@
+uuid: 2123f05b-3429-4a61-ac1d-ab4db56bce81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_down_payment
+    - node.type.payment_plan
+id: node.payment_plan.field_down_payment
+field_name: field_down_payment
+entity_type: node
+bundle: payment_plan
+label: 'Down Payment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

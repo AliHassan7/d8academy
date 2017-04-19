@@ -1,0 +1,103 @@
+uuid: 7c2319d9-5ae2-4e92-bda5-14d4ad148396
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: application
+title: Application
+description: ''
+elements: "full_name:\n  '#type': textfield\n  '#title': 'Full Name'\nemail:\n  '#type': email\n  '#title': Email\nphone:\n  '#type': tel\n  '#title': Phone\nwhich_semester_would_you_like_to_attend_:\n  '#type': webform_entity_checkboxes\n  '#title': 'Which Semester would you like to attend?'\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      semester: semester\nwhere_can_you_attend_class_:\n  '#type': checkboxes\n  '#title': 'Where can you attend class?'\n  '#options':\n    online: Online\n    tysons: 'Tysons Corner'\n    fairfax: Fairfax\n    bethesda: Bethesda\nmotivation_for_taking_this_class:\n  '#type': select\n  '#title': 'Motivation for taking this class'\n  '#options':\n    career: 'To begin a career as a software developer'\n    adjust: 'To transition from a programming job to a career using Drupal'\n    website: 'To build a website / application I have in mind'\n    interest: 'To explore other interests'\ntell_us_more_about_what_is_motivating_you_to_attend_our_classes_:\n  '#type': textarea\n  '#title': 'Tell us more about what is motivating you to attend our classes.'\nwhich_operating_system_does_your_laptop_use_:\n  '#type': checkboxes\n  '#title': 'Which operating system does your laptop use?'\n  '#options':\n    mac: 'Mac OS'\n    windows: Windows\n    linux: Linux\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: ''
+  form_submit_once: false
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_closed_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

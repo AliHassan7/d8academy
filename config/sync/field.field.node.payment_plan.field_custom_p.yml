@@ -1,0 +1,23 @@
+uuid: 9380efdb-1e5a-4cc7-bf04-cfb9fedef71f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_p
+    - node.type.payment_plan
+id: node.payment_plan.field_custom_p
+field_name: field_custom_p
+entity_type: node
+bundle: payment_plan
+label: 'Custom Plan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

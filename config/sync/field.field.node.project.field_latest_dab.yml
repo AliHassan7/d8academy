@@ -1,0 +1,27 @@
+uuid: f7361e64-4003-4b9d-ab8c-77608ff15b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latest_dab
+    - node.type.project
+  module:
+    - file
+id: node.project.field_latest_dab
+field_name: field_latest_dab
+entity_type: node
+bundle: project
+label: 'Latest Database Dump'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip gz'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

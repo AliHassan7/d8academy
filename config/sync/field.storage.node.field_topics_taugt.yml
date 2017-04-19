@@ -1,0 +1,20 @@
+uuid: 3344268b-5527-4005-af31-43692cc717ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_topics_taugt
+field_name: field_topics_taugt
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

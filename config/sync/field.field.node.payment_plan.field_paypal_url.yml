@@ -1,0 +1,23 @@
+uuid: c2dac4bd-c064-4200-85bf-efa942a131c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paypal_url
+    - node.type.payment_plan
+  module:
+    - link
+id: node.payment_plan.field_paypal_url
+field_name: field_paypal_url
+entity_type: node
+bundle: payment_plan
+label: 'Paypal URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

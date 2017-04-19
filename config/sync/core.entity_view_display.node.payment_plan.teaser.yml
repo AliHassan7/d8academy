@@ -1,0 +1,17 @@
+uuid: 8c4e4504-f8c7-4ee3-a0d0-8427ce1d90f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.payment_plan
+  module:
+    - user
+id: node.payment_plan.teaser
+targetEntityType: node
+bundle: payment_plan
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

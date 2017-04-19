@@ -1,0 +1,20 @@
+uuid: 7a2e8889-fc97-4320-9b33-909bcc7f6678
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_late_students
+field_name: field_late_students
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

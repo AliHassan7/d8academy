@@ -1,0 +1,23 @@
+uuid: 42652970-d000-4498-a1ed-3e21378d058a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__of_monthly_payments
+    - node.type.payment_plan
+id: node.payment_plan.field__of_monthly_payments
+field_name: field__of_monthly_payments
+entity_type: node
+bundle: payment_plan
+label: '# of Monthly Payments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

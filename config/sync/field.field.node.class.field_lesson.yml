@@ -1,0 +1,23 @@
+uuid: fc9429df-41cd-4751-929b-67f2de5bf96c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lesson
+    - node.type.class
+  module:
+    - link
+id: node.class.field_lesson
+field_name: field_lesson
+entity_type: node
+bundle: class
+label: Lesson
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

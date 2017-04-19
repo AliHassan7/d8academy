@@ -1,0 +1,23 @@
+uuid: 00c61e6f-9918-43a6-a6f8-294cd1296d39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_semester
+    - node.type.semester
+id: node.semester.field_featured_semester
+field_name: field_featured_semester
+entity_type: node
+bundle: semester
+label: 'Featured Semester'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

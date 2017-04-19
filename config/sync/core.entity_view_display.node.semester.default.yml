@@ -1,0 +1,133 @@
+uuid: 041abfbb-365d-4f04-b8cf-351d29493019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.semester.body
+    - field.field.node.semester.field_course
+    - field.field.node.semester.field_dates
+    - field.field.node.semester.field_expected_class_size
+    - field.field.node.semester.field_featured_semester
+    - field.field.node.semester.field_github_repository_url
+    - field.field.node.semester.field_holidays
+    - field.field.node.semester.field_learning_assistant
+    - field.field.node.semester.field_location
+    - field.field.node.semester.field_location_information
+    - field.field.node.semester.field_online_availability
+    - field.field.node.semester.field_student
+    - field.field.node.semester.field_teacher
+    - node.type.semester
+  module:
+    - address
+    - datetime
+    - link
+    - options
+    - range
+    - text
+    - user
+id: node.semester.default
+targetEntityType: node
+bundle: semester
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_course:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_dates:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_expected_class_size:
+    weight: 103
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+  field_featured_semester:
+    weight: 109
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_github_repository_url:
+    weight: 108
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_holidays:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_learning_assistant:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_location:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+  field_location_information:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_online_availability:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_student:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_teacher:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }
